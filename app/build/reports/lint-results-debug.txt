@@ -1,0 +1,47 @@
+/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4: Warning: The attribute android:dataExtractionRules only applies for Android 12 and higher; since minSdkVersion is API 26 you should also set android:fullBackupContent [DataExtractionRules]
+<application android:theme="@android:style/Theme.Material.NoActionBar" android:label="Write4 NFC" android:icon="@drawable/ic_nfc" android:allowBackup="false" android:dataExtractionRules="@xml/data_extraction_rules" android:supportsRtl="true">
+                                                                                                                                                                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "DataExtractionRules":
+   Before Android 12, the attributes android:allowBackup and
+   android:fullBackupContent were used to configure all forms of backup,
+   including cloud backups, device-to-device transfers and adb backup.
+
+   In Android 12 and higher, these attributes have been deprecated and will
+   only apply to cloud backups. You should instead use the attribute
+   android:dataExtractionRules, specifying an @xml resource that configures
+   which files to back up, for cloud backups and for device-to-device
+   transfers, separately. If your minSdkVersion supports older versions,
+   you'll still want to specify an android:fullBackupContent resource if the
+   default behavior is not right for your app.
+
+   https://developer.android.com/about/versions/12/backup-restore#xml-changes
+   https://goo.gle/DataExtractionRules
+
+/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/java/com/write4/nfc/MainActivity.java:44: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+ root.addView(button("Leer una tarjeta",false,()->{pending=null;status.setText("Modo lectura · acerca una etiqueta NFC");}));
+                                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/java/com/write4/nfc/MainActivity.java:60: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+ private void preview(){try{NdefMessage m=message();bytes.setText(m.toByteArray().length+" bytes · comprueba la capacidad de tu etiqueta");new AlertDialog.Builder(this).setTitle(contact?"Tu tarjeta de contacto":"Tu enlace web").setMessage(describe(m)).setPositiveButton("Listo",null).show();}catch(Exception e){toast(e.getMessage());}}
+                                                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/java/com/write4/nfc/MainActivity.java:60: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+ private void preview(){try{NdefMessage m=message();bytes.setText(m.toByteArray().length+" bytes · comprueba la capacidad de tu etiqueta");new AlertDialog.Builder(this).setTitle(contact?"Tu tarjeta de contacto":"Tu enlace web").setMessage(describe(m)).setPositiveButton("Listo",null).show();}catch(Exception e){toast(e.getMessage());}}
+                                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/java/com/write4/nfc/MainActivity.java:61: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+ private void arm(){try{if(adapter==null||!adapter.isEnabled()){toast("Activa NFC en un teléfono compatible");return;}NdefMessage m=message();new AlertDialog.Builder(this).setTitle("Grabar etiqueta").setMessage(describe(m)+"\n\n"+m.toByteArray().length+" bytes. Se reemplazará el contenido de la siguiente etiqueta que acerques.").setPositiveButton("Preparar grabación",(d,w)->{pending=m;status.setText("Lista para grabar · acerca UNA tarjeta");}).setNegativeButton("Cancelar",null).show();}catch(Exception e){toast(e.getMessage());}}
+                                                                                                                                                                                                                                                                                                                                                                                                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+0 errors, 5 warnings

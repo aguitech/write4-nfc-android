@@ -1,0 +1,2 @@
+com.write4.nfc:xml/data_extraction_rules = 0x7f020000
+com.write4.nfc:drawable/ic_nfc = 0x7f010000

@@ -1,0 +1,59 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.write4.nfc"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.NFC" />
+11-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:2:1-57
+11-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:2:18-55
+12
+13    <uses-feature
+13-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:3:1-77
+14        android:name="android.hardware.nfc"
+14-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:3:15-50
+15        android:required="false" />
+15-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:3:51-75
+16
+17    <application
+17-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:1-6:15
+18        android:allowBackup="false"
+18-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:131-158
+19        android:dataExtractionRules="@xml/data_extraction_rules"
+19-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:159-215
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@drawable/ic_nfc"
+22-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:99-130
+23        android:label="Write4 NFC"
+23-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:72-98
+24        android:supportsRtl="true"
+24-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:216-242
+25        android:theme="@android:style/Theme.Material.NoActionBar" >
+25-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:4:14-71
+26        <activity
+26-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:1-259
+27            android:name="com.write4.nfc.MainActivity"
+27-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:11-39
+28            android:exported="true"
+28-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:40-63
+29            android:windowSoftInputMode="adjustResize" >
+29-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:64-106
+30            <intent-filter>
+30-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:107-248
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:122-173
+31-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:130-171
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:173-232
+33-->/Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/AndroidManifest.xml:5:183-230
+34            </intent-filter>
+35        </activity>
+36    </application>
+37
+38</manifest>

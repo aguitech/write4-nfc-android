@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/hectoraguilar/.gradle/daemon/8.9/com.write4.nfc.app-debug-4:/drawable_ic_nfc.xml.flat",
+        "source": "/Users/hectoraguilar/.gradle/daemon/8.9/com.write4.nfc.app-main-6:/drawable/ic_nfc.xml"
+    },
+    {
+        "merged": "com.write4.nfc.app-debug-4:/xml_data_extraction_rules.xml.flat",
+        "source": "com.write4.nfc.app-main-6:/xml/data_extraction_rules.xml"
+    }
+]

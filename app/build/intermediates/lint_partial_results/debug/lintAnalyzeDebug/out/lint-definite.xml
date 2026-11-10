@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="incidents">
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+            line="44"
+            column="80"
+            startOffset="4598"
+            endLine="44"
+            endColumn="120"
+            endOffset="4638"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+            line="60"
+            column="67"
+            startOffset="8213"
+            endLine="60"
+            endColumn="138"
+            endOffset="8284"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+            line="60"
+            column="90"
+            startOffset="8236"
+            endLine="60"
+            endColumn="138"
+            endOffset="8284"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+            line="61"
+            column="404"
+            startOffset="8886"
+            endLine="61"
+            endColumn="444"
+            endOffset="8926"/>
+    </incident>
+
+</incidents>

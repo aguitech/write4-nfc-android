@@ -1,0 +1,7 @@
+com.write4.nfc.app-pngs-0 /Users/hectoraguilar/Projects/write4-nfc-android/app/build/generated/res/pngs/debug
+com.write4.nfc.app-resValues-1 /Users/hectoraguilar/Projects/write4-nfc-android/app/build/generated/res/resValues/debug
+com.write4.nfc.app-packageDebugResources-2 /Users/hectoraguilar/Projects/write4-nfc-android/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.write4.nfc.app-packageDebugResources-3 /Users/hectoraguilar/Projects/write4-nfc-android/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.write4.nfc.app-debug-4 /Users/hectoraguilar/Projects/write4-nfc-android/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.write4.nfc.app-debug-5 /Users/hectoraguilar/Projects/write4-nfc-android/app/src/debug/res
+com.write4.nfc.app-main-6 /Users/hectoraguilar/Projects/write4-nfc-android/app/src/main/res

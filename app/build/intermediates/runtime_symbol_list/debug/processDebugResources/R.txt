@@ -1,0 +1,2 @@
+int drawable ic_nfc 0x7f010000
+int xml data_extraction_rules 0x7f020000

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.7.3" type="partial_results">
+    <map id="UnsafeImplicitIntentLaunch">
+            <map id="actionsSent">
+                    <map id="android.intent.action.VIEW (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+                            line="47"
+                            column="198"
+                            startOffset="5120"
+                            endLine="47"
+                            endColumn="247"
+                            endOffset="5169"/>
+                    </map>
+                    <map id="android.settings.NFC_SETTINGS (used to start an activity)">
+                        <location id="0"
+                            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/write4/nfc/MainActivity.java"
+                            line="48"
+                            column="60"
+                            startOffset="5408"
+                            endLine="48"
+                            endColumn="100"
+                            endOffset="5448"/>
+                    </map>
+            </map>
+    </map>
+    <map id="UnsafeIntentLaunch">
+            <map id="unprotected">
+                <entry
+                    name="com.write4.nfc.MainActivity"
+                    boolean="true"/>
+            </map>
+    </map>
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[ic_nfc(U)],xml[data_extraction_rules(U)];;;;"/>
+    </map>
+
+</incidents>
